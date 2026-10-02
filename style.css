@@ -1,0 +1,43 @@
+.scroll-container{
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+
+    gap: 16px;
+    padding: 16px;
+    width: 100%;
+    
+    align-items: center;
+    height: 100vh;
+
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE et Edge */
+
+    -webkit-overflow-scrolling: touch; /* Mobile */
+
+    scroll-behavior: auto;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+
+.scroll-item {
+  flex: 0 0 auto;                 /* IMPORTANT : empêche l'élément de rétrécir */
+  width: 250px;                   /* Largeur de vos cartes */
+  height: 350px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 16px;
+
+  align-content: center;
+  text-align: center;
+}
+
+body{
+    background-color: rgb(121, 114, 51);
+
+    overflow: hidden;
+    height: 100%;
+}
