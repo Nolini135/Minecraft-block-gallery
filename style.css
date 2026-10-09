@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Mojang";
+  src: url(fonts/Mojang-Regular.ttf) format("truetype");
+  font-display: swap;
+}
+
 .scroll-container{
     display: flex;
     overflow-x: auto;
@@ -27,7 +33,7 @@
   flex: 0 0 auto;                 /* IMPORTANT : empêche l'élément de rétrécir */
   width: 250px;                   /* Largeur de vos cartes */
   height: 350px;
-  background-color: #ffffff;
+  background-color: #ffffffbb;
   color: rgb(0, 0, 0);
   border-radius: 16px;
 
@@ -36,8 +42,20 @@
 }
 
 body{
-    background-color: rgb(121, 114, 51);
+    background-image: url(images/background.webp);
 
     overflow: hidden;
     height: 100%;
+}
+img{
+  height: 150px;
+
+  image-rendering: -moz-crisp-edges; /*Firefox*/
+  image-rendering: -webkit-optimize-contrast; /*Safari*/
+  image-rendering: pixelated; /* Standard moderne (Chrome, Edge, Safari, Opera) */
+  image-rendering: crisp-edges; /* Standard moderne alternatif */
+}
+p{
+  font-family: "Mojang";
+  
 }
